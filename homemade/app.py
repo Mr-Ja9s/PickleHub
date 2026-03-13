@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.secret_key = 'your_very_secret_key_12345'  # Change this in production
 
 # ================== AWS DYNAMODB SETUP ==================
-dynamodb = boto3.resource('dynamodb', region_name='ap-south-1')
+dynamodb = boto3.resource('dynamodb', region_name='eu-north-1')
 users_table = dynamodb.Table('Users')
 orders_table = dynamodb.Table('Orders')
 
