@@ -11,8 +11,8 @@ app.secret_key = 'your_very_secret_key_12345'  # Change this in production
 
 # ================== AWS DYNAMODB SETUP ==================
 dynamodb = boto3.resource('dynamodb', region_name='eu-north-1')
-users_table = dynamodb.Table('Users')
-orders_table = dynamodb.Table('Orders')
+users_table = dynamodb.Table('users')
+orders_table = dynamodb.Table('orders')
 
 # ================== PRODUCT DATA ==================
 products = {
